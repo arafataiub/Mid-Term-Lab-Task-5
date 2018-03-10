@@ -1,0 +1,5 @@
+<?php		error_reporting(null);        $id= trim($_REQUEST['id']);		$pass= trim($_REQUEST['pass']);		$rpass= trim($_REQUEST['rpass']);		$name= trim($_REQUEST['name']);		$user_type= trim( $_REQUEST['user']);
+		
+						if($id=="" || $pass=="" || $rpass=="" || $name=="" || $user_type=="")		{			echo "Fill up all the field first";		}		else		{								}
+		
+		?>		<center><form  action="registration.php"   method="post">	<table border="0" cellspacing="0" cellpadding="0">		<tr>			<td>				<fieldset>					<legend><h3>REGISTRATION</h3></legend>					Id<br/><input type="text" name="id" value="" ><br/>					Password<br/><input type="password" name="pass" value=""><br/>					Confirm Password<br/><input type="password" name="rpass" value=""><br/>					Name<br/><input type="text" name="name" value=""><br/>					User Type<hr/>					<input type="radio" name="user" value="user"/>User					<input type="radio" name="user" value="admin"/>Admin					<hr/>					<input type="submit" name="submit" value="Sign Up">					<a href="login.html">Sign In</a>				</fieldset>			</td>		</tr>                                	</table></form></center>		
